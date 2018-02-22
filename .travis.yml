@@ -28,8 +28,6 @@ env:
   - MAGENTO_VERSION=ce-1.9.2.4
   - MAGENTO_VERSION=ce-1.9.1.1
 before_install:
-- composer selfupdate
-- composer config github-oauth.github.com "$GITHUB_TOKEN"
 - curl -sSL https://raw.githubusercontent.com/ffuenf/MageTestStand/dev/before_install.sh
   | bash
 script:
