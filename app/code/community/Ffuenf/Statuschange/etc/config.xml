@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ffuenf_Statuschange extension
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/mit-license.php
+ *
+ * @category   Ffuenf
+ *
+ * @author     Achim Rosenhagen <a.rosenhagen@ffuenf.de>
+ * @copyright  Copyright (c) 2018 ffuenf (http://www.ffuenf.de)
+ * @license    http://opensource.org/licenses/mit-license.php MIT License
+*/
+-->
+<config>
+    <modules>
+        <Ffuenf_Statuschange>
+            <version>1.0.0</version>
+        </Ffuenf_Statuschange>
+    </modules>
+    <global>
+        <helpers>
+            <ffuenf_statuschange>
+                <class>Ffuenf_Statuschange_Helper</class>
+            </ffuenf_statuschange>
+        </helpers>
+        <blocks>
+            <ffuenf_statuschange>
+                <class>Ffuenf_Statuschange_Block</class>
+            </ffuenf_statuschange>
+        </blocks>
+        <models>
+            <ffuenf_statuschange>
+                <class>Ffuenf_Statuschange_Model</class>
+            </ffuenf_statuschange>
+        </models>
+        <resources>
+            <ffuenf_statuschange_setup>
+                <setup>
+                    <module>Ffuenf_Statuschange</module>
+                </setup>
+            </ffuenf_statuschange_setup>
+        </resources>
+        <events>
+            <catalog_product_save_after>
+                <observers>
+                    <catalog_product_save_after_handler>
+                        <type>model</type>
+                        <class>ffuenf_statuschange/observer</class>
+                        <method>changeStatus</method>
+                    </catalog_product_save_after_handler>
+                </observers>
+            </catalog_product_save_after>
+        </events>
+    </global>
+    <default>
+        <ffuenf_statuschange>
+            <general>
+                <enable>1</enable>
+            </general>
+        </ffuenf_statuschange>
+    </default>
+    <uninstall>
+        <filename>uninstall.txt</filename>
+    </uninstall>
+    <phpunit>
+        <suite>
+            <modules>
+                <Ffuenf_Statuschange/>
+            </modules>
+        </suite>
+    </phpunit>
+</config>
