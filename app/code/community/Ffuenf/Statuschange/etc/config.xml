@@ -61,7 +61,7 @@
     <default>
         <ffuenf_statuschange>
             <general>
-                <enabled>1</enabled>
+                <enable>1</enable>
             </general>
         </ffuenf_statuschange>
     </default>

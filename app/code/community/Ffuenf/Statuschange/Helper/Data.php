@@ -21,7 +21,7 @@ class Ffuenf_Statuschange_Helper_Data extends Ffuenf_Common_Helper_Core
     /**
      * Path for the config for extension active status.
      */
-    const CONFIG_EXTENSION_ACTIVE = 'ffuenf_statuschange/general/enabled';
+    const CONFIG_EXTENSION_ACTIVE = 'ffuenf_statuschange/general/enable';
 
     /**
      * Variable for if the extension is active.
