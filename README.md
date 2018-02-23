@@ -24,10 +24,10 @@ Other versions are assumed to work.
 Requirements
 ------------
 
-|                                                                               | PHP 5.5           | PHP 5.6           | PHP 7.0           | PHP 7.1              | PHP 7.2              |
-| ----------------------------------------------------------------------------- | ----------------- | ----------------- | ----------------- | -------------------- | -------------------- |
-| [EOL](https://secure.php.net/supported-versions.php) / SEC-FIX / STABLE / RC  | EOL               | SEC-FIX           | SEC-FIX           | **STABLE**           | **STABLE**           |
-| automated tests on [travis]                                                   | **required pass** | **required pass** | **required pass** | **allowed failures** | **allowed failures** |
+|                                                                               | PHP 7.0           | PHP 7.1              | PHP 7.2              |
+| ----------------------------------------------------------------------------- | ----------------- | -------------------- | -------------------- |
+| [EOL](https://secure.php.net/supported-versions.php) / SEC-FIX / STABLE / RC  | SEC-FIX           | **STABLE**           | **STABLE**           |
+| automated tests on [travis]                                                   | **required pass** | **allowed failures** | **allowed failures** |
 
 Magento Community Edition officially supports PHP 5.4 and PHP 5.5.
 
