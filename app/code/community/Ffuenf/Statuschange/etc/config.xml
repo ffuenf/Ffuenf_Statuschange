@@ -20,7 +20,7 @@
 <config>
     <modules>
         <Ffuenf_Statuschange>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </Ffuenf_Statuschange>
     </modules>
     <global>
@@ -63,6 +63,11 @@
             <general>
                 <enable>1</enable>
             </general>
+            <log>
+                <enable>0</enable>
+                <profile_enable>0</profile_enable>
+                <exception_enable>0</exception_enable>
+            </log>
         </ffuenf_statuschange>
     </default>
     <uninstall>
